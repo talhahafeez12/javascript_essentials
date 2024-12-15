@@ -48,3 +48,21 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+
+// Practice Task
+
+let role = "Employee";
+let services;
+
+if (role == "Employee") {
+    services = "Authorized to have access to 'Dietary Services'.";
+} else if (role == "Enrolled Member") {
+    services = "Authorized to have access to 'Dietary Services' and one-on-one interaction with a dietician.";
+}else if (role == "Subscriber") {
+    services = "Authorized to have partial access to facilitate 'Dietary Services' only."
+} else if (role == "Non-Subscriber") {
+    services = "Please enroll or at least subscribe first to avail this facility."
+}
+
+console.log(services);
